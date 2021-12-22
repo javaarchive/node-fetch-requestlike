@@ -1,0 +1,1 @@
+This project attempts to emulate the now deprecated `request` module's api using node-fetch.  
