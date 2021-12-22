@@ -71,7 +71,7 @@ function request(optionsOrUrl,callback){
 
     if(options.auth){
         let {user,pass} = options.auth;
-        headers["Authorization"] = "Basic " + Buffer.from("${user}:${pass}").toString("base64"); // TODO: Faster function?
+        headers["Authorization"] = "Basic " + Buffer.from(`${user}:${pass}`).toString("base64"); // TODO: Faster function?
     }
 
     // body
